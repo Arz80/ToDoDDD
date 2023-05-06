@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace BLL.Repositories
 {
-    internal class StatusRepository : Repository<Status>
+    public class StatusRepository : Repository<Status>
     {
         private AppDbContext _db;
         public StatusRepository(AppDbContext db) : base(db)

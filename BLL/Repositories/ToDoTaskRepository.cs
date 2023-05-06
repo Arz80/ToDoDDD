@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace BLL.Repositories;
 
-internal class ToDoTaskRepository : Repository<ToDoTask>
+public class ToDoTaskRepository : Repository<ToDoTask>
 {
     private AppDbContext _db;
     public ToDoTaskRepository(AppDbContext db) : base(db)

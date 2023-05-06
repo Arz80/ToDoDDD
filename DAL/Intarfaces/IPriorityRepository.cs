@@ -7,6 +7,6 @@ using System.Threading.Tasks;
 
 namespace DAL.Intarfaces;
 
-internal interface IPriorityRepository : IRepository<Priority>, IDisposable
+public interface IPriorityRepository : IRepository<Priority>, IDisposable
 {
 }
