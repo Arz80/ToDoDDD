@@ -2,10 +2,10 @@
 
 namespace DAL.Entities;
 
-[DisplayColumn("Приоритет задачи")]
+//[DisplayColumn("Приоритет задачи")]
 public class Priority : BaseEntity
 {
-    [Display(Name = "Прриоритет задачи")]
-    [Required]
+    //[Display(Name = "Прриоритет задачи")]
+    //[Required]
     public string? Name { get; set; } 
 }

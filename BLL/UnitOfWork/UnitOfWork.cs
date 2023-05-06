@@ -3,7 +3,7 @@ using DAL.Datas;
 
 namespace BLL.UnitOfWork;
 
-public class UnitOfWork
+public class UnitOfWork : IDisposable
 {
     private AppDbContext context;
 
@@ -13,9 +13,9 @@ public class UnitOfWork
 
     }
 
-    private PriorityRepository priorityRepository;
-    private StatusRepository statusRepository;
-    private ToDoTaskRepository toDoTaskRepository;
+    private PriorityRepository? priorityRepository;
+    private StatusRepository? statusRepository;
+    private ToDoTaskRepository? toDoTaskRepository;
 
     public PriorityRepository PriorityRepository
     {

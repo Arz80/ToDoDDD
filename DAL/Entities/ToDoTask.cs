@@ -10,22 +10,22 @@ namespace DAL.Entities;
 
 public class ToDoTask : BaseEntity
 {
-    [Display(Name = "Наименование задачи")]
-    [Required]
+    //[Display(Name = "Наименование задачи")]
+    //[Required]
     public string? Name { get; set; }
-    [Display(Name = "Описание задачи")]
-    [Required]
-    [DataType(DataType.MultilineText)]
+    //[Display(Name = "Описание задачи")]
+    //[Required]
+    //[DataType(DataType.MultilineText)]
     public string? Description { get; set; }
 
-    [Required]
-    [Display(Name = "Статус")]
+    //[Required]
+    //[Display(Name = "Статус")]
     public Guid StatusId { get; set; }
-    [Display(Name = "Статус")]
+    //[Display(Name = "Статус")]
     public virtual Status? Status { get; set; }
-    [Required]
-    [Display(Name = "Приоритет")]
+    //[Required]
+    //[Display(Name = "Приоритет")]
     public Guid PriorityId { get; set; }
-    [Display(Name = "Приоритет")]
+    //[Display(Name = "Приоритет")]
     public virtual Priority? Priority { get; set; }
 }
